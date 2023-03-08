@@ -1,0 +1,3 @@
+#!/bin/bash
+printf '%s\n' 0x00-shell_basics/* | tr '\n' ',' | sed 's/,$/\n/'
+
