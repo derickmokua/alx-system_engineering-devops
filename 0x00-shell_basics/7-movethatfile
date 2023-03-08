@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-#!/bin/bash
-=======
-#!bin/bash
->>>>>>> 3cda6f63c620451daeb2dcf7b51a195fb5a6f9b0
+
+#!/bash/bin
 mv /tmp/betty /tmp/my_first_directory/
