@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Bash script to display /etc/passwd user info.
+# Show: username, user id, home directory path.
+
+# Extracts essential details using 'read'.
+
+myfile="/etc/passwd"
+while IFS= read -r line
+do
+    echo "$line" | cut -d":" -f1,3,6
+done < "$myfile"

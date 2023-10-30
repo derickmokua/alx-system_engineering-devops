@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Begin a Bash script that takes parsed Apache log data to group visitors by IP and HTTP status code.
+
+# Building upon the previous exercise, this script will sort and organize the data.
+# It groups visitors by their IP addresses and the corresponding HTTP status codes they received.
+# The final output will provide a more comprehensive view of visitor activity based on IP and status codes.
+
+myfile="apache-access.log"
+awk -F' ' '{ print $1, $9}' $myfile | sort | uniq -c|sort -nr
