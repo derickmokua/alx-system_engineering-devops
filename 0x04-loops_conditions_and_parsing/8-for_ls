@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Begin a Bash script to display the content of the current directory.
+# The script will present the content in a list format.
+# For each item in the current directory, it will extract and display only the part
+# of the name that appears after the first dash (hyphen).
+# This script is designed to provide a modified listing of directory content.
+
+mylist=$(ls)
+
+for i in $mylist; do
+  echo "$i" | cut -d '-' -f2
+done

@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Initialize a Bash script to list numbers from 1 to 100.
+
+# The script adheres to the following conditions:
+# - If a number is a multiple of both 3 and 5, it displays "FizzBuzz".
+# - If a number is a multiple of 3, it displays "Fizz".
+# - If a number is a multiple of 5, it displays "Buzz".
+# - For all other numbers, it simply displays the number.
+# The output will be presented in a list format.
+
+for num in {1..100}
+do
+  if (( num % 3 == 0 && num % 5 == 0 ))
+  then
+    echo "FizzBuzz"
+  elif (( num % 3 == 0 ))
+  then
+    echo "Fizz"
+  elif (( num % 5 == 0 ))
+  then
+    echo "Buzz"
+  else
+    echo "$num"
+  fi
+done

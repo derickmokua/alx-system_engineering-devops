@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Begin a Bash script to display the time in a 12-hour format with hours ranging from 0 to 12.
+# Within the script, create a loop to display hours from 0 to 12.
+# Inside the hour loop, initiate another loop to display minutes from 1 to 59.
+# For each combination of hours and minutes, output the formatted time.
+# The script is designed to cover all hours and minutes from 1 to 59 within a 12-hour format.
+
+hour=0
+
+while [ $hour -le 12 ]
+do
+  echo "Hour: $hour"
+  minute=1
+  while [ $minute -le 59 ]
+  do
+    echo "$minute"
+    (( minute++ ))
+  done
+  (( hour++ ))
+done
