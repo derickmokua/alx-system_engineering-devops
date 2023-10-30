@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script lists currently running processes,
+# and it displays lines containing the word 'bash'.
+# It disables the ShellCheck warning SC2009.
+
+ps auxf | grep bash

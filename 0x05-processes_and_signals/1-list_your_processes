@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This script exhibits a roster of presently active processes.
+
+ps auxf
