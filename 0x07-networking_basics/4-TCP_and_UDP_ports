@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Code that showcases open communication ports.
+
+netstat -lp
