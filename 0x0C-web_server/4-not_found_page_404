@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Set up nginx on a web server to listen on port 80
+# and configure it to redirect to a custom 404 page.
+
