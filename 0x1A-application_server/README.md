@@ -1,0 +1,1 @@
+This guide covers the difference between application servers and web servers, with a focus on serving Flask applications using Gunicorn and Nginx on Ubuntu 16.04. It includes instructions for running Gunicorn, managing Flask routes with strict_slashes, and provides a reference to Upstart for process management.
